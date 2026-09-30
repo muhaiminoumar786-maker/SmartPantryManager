@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating and styling the settings screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!--Creating and styling the settings title-->
+    <TextView
+        android:id="@+id/txtSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the profile section heading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Profile"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the profile name input-->
+    <EditText
+        android:id="@+id/edtProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <!--Creating and styling the preferences heading-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Preferences"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--Creating the expiry reminder setting-->
+    <Switch
+        android:id="@+id/switchExpiryReminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Expiry Reminders"
+        android:textSize="16sp" />
+
+    <!--Explaining the expiry reminder setting-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Enable reminders for pantry ingredients that are approaching their expiry date."
+        android:textSize="14sp" />
+
+    <!--Creating and styling the save settings button-->
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Save Settings" />
+</LinearLayout>

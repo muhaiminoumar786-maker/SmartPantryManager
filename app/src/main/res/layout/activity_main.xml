@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Creating and styling the main layout for the home screen -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Creating and styling the main application title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Smart Pantry Manager"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Creating and styling the description text -->
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Manage your pantry and discover recipes using the ingredients you already have."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!-- Creating and styling the button to open the pantry management section -->
+    <Button
+        android:id="@+id/btnPantry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="My Pantry" />
+
+    <!-- Creating and styling the button to open the suggested recipes section -->
+    <Button
+        android:id="@+id/btnRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Suggested Recipes" />
+
+    <!-- Creating and styling the button to open the settings section -->
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings" />
+
+</LinearLayout>

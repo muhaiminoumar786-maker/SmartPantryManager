@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating and styling the layout for each recipe-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <!--Creating and styling the recipe name-->
+    <TextView
+        android:id="@+id/txtRecipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the recipe description-->
+    <TextView
+        android:id="@+id/txtRecipeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="Recipe Description"
+        android:textSize="16sp" />
+
+    <!--Creating and styling the button used to view the recipe-->
+    <Button
+        android:id="@+id/btnViewRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Recipe" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating and styling the main layout for the pantry screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!--Creating and styling the pantry screen title-->
+    <TextView
+        android:id="@+id/txtPantryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="My Pantry"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the pantry screen description-->
+    <TextView
+        android:id="@+id/txtPantryDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:text="Manage the ingredients available in your pantry."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!--Creating and styling the message displayed when the pantry is empty-->
+    <TextView
+        android:id="@+id/txtEmptyPantry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Your pantry is currently empty."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!--Creating the list used to display the saved ingredients-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp" />
+
+    <!--Creating and styling the button used to add a new ingredient-->
+    <Button
+        android:id="@+id/btnAddIngredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Ingredient" />
+</LinearLayout>

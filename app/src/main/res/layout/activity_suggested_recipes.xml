@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating and styling the main layout for the suggested recipes screen-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!--Creating and styling the suggested recipes title-->
+    <TextView
+        android:id="@+id/txtSuggestedRecipesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Suggested Recipes"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the suggested recipes description-->
+    <TextView
+        android:id="@+id/txtSuggestedRecipesDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Recipes you can make using the ingredients in your pantry."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <!--Creating and styling the message displayed when no recipes match-->
+    <TextView
+        android:id="@+id/txtNoRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="No recipes can currently be made with the ingredients in your pantry."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!--Creating the list used to display suggested recipes-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

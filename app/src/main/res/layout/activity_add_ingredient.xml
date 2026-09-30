@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating a scrollable layout for the add and edit ingredient screen-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Creating the main layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!--Creating and styling the screen title-->
+        <TextView
+            android:id="@+id/txtAddIngredientTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Add Ingredient"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!--Creating the ingredient name label-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredient Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--Creating the ingredient name input-->
+        <EditText
+            android:id="@+id/edtIngredientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Example: Milk"
+            android:inputType="textCapWords"
+            android:padding="12dp" />
+
+        <!--Creating the quantity label-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--Creating the quantity input-->
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Example: 500"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <!--Creating the unit label-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--Creating the unit input-->
+        <EditText
+            android:id="@+id/edtUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Example: g, kg, ml, L, item"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <!--Creating the expiry date label-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date (Optional)"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!--Creating the expiry date field-->
+        <EditText
+            android:id="@+id/edtExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:hint="Tap to select an expiry date"
+            android:padding="12dp" />
+
+        <!--Creating information for the expiry date-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Leave this field empty if the ingredient does not have an expiry date."
+            android:textSize="13sp" />
+
+        <!--Creating and styling the save ingredient button-->
+        <Button
+            android:id="@+id/btnSaveIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Ingredient" />
+
+    </LinearLayout>
+</ScrollView>

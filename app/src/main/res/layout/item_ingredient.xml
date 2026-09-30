@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Creating and styling the layout for each ingredient-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp">
+
+    <!--Creating and styling the ingredient name-->
+    <TextView
+        android:id="@+id/txtIngredientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingredient Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--Creating and styling the ingredient quantity and unit-->
+    <TextView
+        android:id="@+id/txtIngredientQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Quantity"
+        android:textSize="16sp" />
+
+    <!--Creating and styling the ingredient expiry date-->
+    <TextView
+        android:id="@+id/txtIngredientExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Expiry Date"
+        android:textSize="14sp" />
+
+    <!--Creating the layout used for the edit and delete buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!--Creating and styling the edit ingredient button-->
+        <Button
+            android:id="@+id/btnEditIngredient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:text="Edit" />
+
+        <!--Creating and styling the delete ingredient button-->
+        <Button
+            android:id="@+id/btnDeleteIngredient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="Delete" />
+    </LinearLayout>
+</LinearLayout>
